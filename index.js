@@ -9,7 +9,7 @@ app.get("/",function(req,res){
   res.sendFile(__dirname + "/index.html");
 });
 
-app.post("/bmi",function(req,res){
+app.post("/",function(req,res){
   var weight=parseFloat(req.body.weight);
   var height=parseFloat(req.body.height);
   var bmi=(weight)/(height*height);
